@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" class="min-h-full antialiased">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11ty TailwindCSS Template</title>
+    {% if helpers.environment === "development" %}
+      <link rel="stylesheet" href="/styles/index.css">
+    {% else %}
+      {# else, use the minified css file for production #}
+      <link rel="stylesheet" href="/styles/index.css">
+    {% endif %}
+
+    {# include scripts #}
+    {% if helpers.environment === "development" %}
+      <script src="/scripts/index.js" defer></script>
+    {% else %}
+      <script src="/scripts/index.js" defer></script>
+    {% endif %}
+
+  </head>
+
+  <body {% if body_class %} id="{{ body_class }}"{% endif %} class="">
+
+    <div id="wrapper" class="">
+
+      {# include content #}
+      {{ content | safe }}
+
+    </div>
+
+  </body>
+</html>
