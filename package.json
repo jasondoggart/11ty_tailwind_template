@@ -1,0 +1,26 @@
+{
+  "name": "11ty_tailwind_template",
+  "version": "1.0.0",
+  "description": "template for creating projects using 11ty and TailwindCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasondoggart/11ty_tailwind_template.git"
+  },
+  "keywords": [
+    "11ty",
+    "tailwind",
+    "netlify",
+    "static",
+    "template"
+  ],
+  "author": "Jason Doggart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasondoggart/11ty_tailwind_template/issues"
+  },
+  "homepage": "https://github.com/jasondoggart/11ty_tailwind_template#readme"
+}
